@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerdigungen – Niunias Blumen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="Bilder/LogoImage.png" alt="Niunias Blumen Logo">
+        <h1>Niunias Blumen</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="angebote.html" class="active">Angebote</a></li>
+            <li><a href="saisonal.html">Saisonales</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+            <div class="hero-text">
+                <h2>Trauerfloristik</h2>
+                <p>Platzhalter </p>
+            </div>
+    </section>
+
+    <section class="angebot-detail">
+        <div class="text">
+            <h3>Individuelle Trauerfloristik</h3>
+            <p>In Momenten des Abschieds sagen Blumen oft mehr als Worte.
+                Mit viel Feingefühl und Respekt gestalten wir individuelle Trauerfloristik – 
+                von klassischen Kränzen über Sarg- und Urnenschmuck bis hin zu persönlichen Gestecken.
+                Jede Kreation entsteht mit Liebe zum Detail und dem Wunsch, Erinnerungen sichtbar zu machen. 
+                Wir beraten Sie einfühlsam und nehmen uns Zeit, 
+                damit ein würdevoller Blumengruß entsteht, der Trost spendet und Verbundenheit ausdrückt.</p>
+        </div>
+
+        <div id="galerie" class="galerie"></div>
+            <script>
+                // Pfad zu deinem Bild-Ordner
+                const ordner = "Bilder/Beerdigungen/";
+                const anzahl = 43; 
+
+                const galerie = document.getElementById("galerie");
+
+                for (let i = 1; i <= anzahl; i++) {
+                    const img = document.createElement("img");
+                    img.src = `${ordner}bild${i}.jpg`;
+                    img.alt = `Blumengesteck ${i}`;
+                    galerie.appendChild(img);
+                }
+            </script>
+    </section>
+</main>
+
+ <footer>
+       <p>© 2025 Niuniasreisen • <a href="impressum.html">Impressum</a> • <a href="datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

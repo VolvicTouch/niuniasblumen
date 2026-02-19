@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hochzeiten – Niunias Blumen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="Bilder/LogoImage.png" alt="Niunias Blumen Logo">
+        <h1>Niunias Blumen</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="angebote.html" class="active">Angebote</a></li>
+            <li><a href="saisonal.html">Saisonales</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+            <div class="hero-text">
+                <h2>Eventfloristik</h2>
+                <p>Blumen, die einen schönen Tag unvergesslich machen.</p>
+            </div>
+    </section>
+
+    <section class="angebot-detail">
+        <div class="text">
+            <h3>Individuelle Eventfloristik</h3>
+            <p>Jeder Geburtstag ist ein Anlass zum Feiern – ob klein und persönlich oder groß und festlich.
+               Unsere floralen Arrangements bringen Farbe, Frische und Freude in jede Feier.
+                Von modernen Sträußen bis hin zu dekorativen Tischarrangements gestalten wir individuelle Blumenkreationen, 
+                die perfekt zum Anlass und zur Persönlichkeit passen.</p>
+        </div>
+
+        <div id="galerie" class="galerie"></div>
+            <script>
+                const ordner = "Bilder/Feiern/";
+                const anzahl = 90; 
+
+                const galerie = document.getElementById("galerie");
+
+                for (let i = 1; i <= anzahl; i++) {
+                    const img = document.createElement("img");
+                    img.src = `${ordner}bild (${i}).jpg`;
+                    img.alt = `Blumengesteck ${i}`;
+                    galerie.appendChild(img);
+                }
+            </script>
+    </section>
+</main>
+
+ <footer>
+       <p>© 2025 Niuniasreisen • <a href="impressum.html">Impressum</a> • <a href="datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>

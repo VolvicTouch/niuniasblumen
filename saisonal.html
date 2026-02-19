@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisonales – Niunias Blumen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="Bilder/LogoImage.png" alt="Niunias Blumen Logo">
+        <h1>Niunias Blumen</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="angebote.html">Angebote</a></li>
+            <li><a href="saisonal.html" class="active">Saisonales</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+            <div class="hero-text">
+                <h2>Saisonales</h2>
+            </div>
+    </section>
+
+    <section class="page-header">
+        <h2>Weihnachtsfloristik</h2>
+        <p>Zur Weihnachtszeit wird es besonders stimmungsvoll.
+            Adventskränze, winterliche Gestecke und festliche Dekorationen sorgen für eine warme, besinnliche Atmosphäre.
+            Ob klassisch in Rot und Grün oder modern und schlicht – wir gestalten individuelle Weihnachtsfloristik, 
+            die Ihr Zuhause in ein festliches Ambiente verwandelt und die Vorfreude auf das Fest spürbar macht.</p>
+    </section>
+
+    <section class="angebot-detail">
+        <div id="galerie" class="galerie"></div>
+            <script>
+                const ordner = "Bilder/Weihnachten/";
+                const anzahl = 56; 
+
+                const galerie = document.getElementById("galerie");
+
+                for (let i = 1; i <= anzahl; i++) {
+                    const img = document.createElement("img");
+                    img.src = `${ordner}bild (${i}).jpg`;
+                    img.alt = `Weihnachten ${i}`;
+                    galerie.appendChild(img);
+                }
+            </script>
+    </section>
+</main>
+
+
+ <main>
+    <section class="page-header">
+        <h2>Osterfloristik</h2>
+        <p>Wenn der Frühling erwacht und die Tage heller werden, bringen frische Blumen und natürliche Dekorationen neues Leben ins Zuhause.
+            Ob zarte Frühlingssträuße, liebevoll gestaltete Osternester oder moderne Tischdekorationen – unsere Osterfloristik 
+            verbindet Leichtigkeit, Farbe und natürliche Materialien zu harmonischen Arrangements.
+            Mit viel Liebe zum Detail gestalten wir frühlingshafte Kreationen, die Wärme und Freude in die Osterzeit bringen.</p>
+    </section>
+
+    <section class="angebot-detail">
+        <div id="galerie1" class="galerie"></div>
+            <script>
+                const ordner1 = "Bilder/Ostern/";
+                const anzahl1 = 5; 
+
+                const galerie1 = document.getElementById("galerie1");
+
+                for (let i = 1; i <= anzahl1; i++) {
+                    const img = document.createElement("img");
+                    img.src = `${ordner1}bild (${i}).jpg`;
+                    img.alt = `Ostern ${i}`;
+                    galerie1.appendChild(img);
+                }
+            </script>
+    </section>
+</main> 
+
+ <footer>
+       <p>© 2025 Niuniasreisen • <a href="impressum.html">Impressum</a> • <a href="datenschutz.html">Datenschutz</a>
+    </footer>
+</body>
+</html>
