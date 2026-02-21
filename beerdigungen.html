@@ -45,13 +45,13 @@
             <script>
                 // Pfad zu deinem Bild-Ordner
                 const ordner = "Bilder/Beerdigungen/";
-                const anzahl = 43; 
+                const anzahl = 102; 
 
                 const galerie = document.getElementById("galerie");
 
                 for (let i = 1; i <= anzahl; i++) {
                     const img = document.createElement("img");
-                    img.src = `${ordner}bild${i}.jpg`;
+                    img.src = `${ordner}bild (${i}).jpg`;
                     img.alt = `Blumengesteck ${i}`;
                     galerie.appendChild(img);
                 }

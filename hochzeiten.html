@@ -39,15 +39,13 @@
 
         <div id="galerie" class="galerie"></div>
             <script>
-                // Pfad zu deinem Bild-Ordner
                 const ordner = "Bilder/Hochzeiten/";
-                const anzahl = 42; // Anzahl der Bilder (z. B. 6)
-
+                const anzahl = 52; 
                 const galerie = document.getElementById("galerie");
 
                 for (let i = 1; i <= anzahl; i++) {
                     const img = document.createElement("img");
-                    img.src = `${ordner}bild${i}.jpg`;
+                    img.src = `${ordner}bild (${i}).jpg`;
                     img.alt = `Blumengesteck ${i}`;
                     galerie.appendChild(img);
                 }
